@@ -45,17 +45,11 @@ class newPostModal {
       const newCardName = card.children[0].innerHTML;
       const newCardEmail = card.children[2].innerHTML;
 
-
-
-      new Card(1, 1, input[0].value, newCardName, '', newCardEmail, input[1].value).renderNewCard('div')
+     new Card(1, 1, input[0].value, newCardName, '', newCardEmail, input[1].value).renderNewCard('div')
 
 
     })
-
-
-
-
-  }
+}
 
 
   createElements() {
