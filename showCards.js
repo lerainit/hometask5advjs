@@ -9,7 +9,7 @@ export const showCards = () => {
 
             new Card(userId, id, title, '', '', '', body).render('div')
 
-        })
+        }).catch(err => console.log(err))
 
         fetch('https://ajax.test-danit.com/api/json/users',{method:'GET'}).then(response => response.json()).then(result => {
 
@@ -34,7 +34,7 @@ export const showCards = () => {
 
         })
 
-    })
+    }).catch(err => console.log(err))
 }
 
 showCards()
